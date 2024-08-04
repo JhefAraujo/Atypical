@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    background-color: black;
+    background-image: url(BG\ Gradient.png);
+    background-position: center top;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    justify-content: space-around;
+    padding-left: 7px;
+    padding-right: 7px;
+    border: 1px solid #2D2D2D;
+    border-radius: 50px;
+    width: 35%;
+    backdrop-filter: blur(50px);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    position: absolute;
+    left: 10%;
+    transform: translateX(-50%);
+    padding: 0 30px 0 30px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    margin: 7px 0 7px 0;
+    text-decoration: none;
+    border-radius: 50px;
+    width: 20%;
+    border: 1px solid transparent;
+    text-align: center;
+    font-family: sans-serif;
+    transition: all .5s;
+}
+
+nav a:hover {
+    border: 1px solid #1b1b1b;
+}
+
+nav a.active {
+    border: 1px solid #2D2D2D;
+}
+
+.comece {
+    color: white;
+    height: 50%;
+    border: 1px solid #2D2D2D;
+    padding: 0 30px 0 30px;
+    border-radius: 50px;
+    background-color: #0E0E10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 1s;
+    position: absolute;
+    right: 10%;
+    transform: translateX(50%);
+}
+
+.comece:hover {
+    background-color: #2D2D2D;
+    border: 1px solid rgb(165, 165, 165);
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+main h1 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 190px;
+    text-align: center;
+
+}
+
+main p {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.wrapText {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
