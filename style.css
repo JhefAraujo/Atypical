@@ -110,6 +110,9 @@ main {
     align-items: center;
     justify-content: center;
     position: relative;
+    background-image: url(BG\ Gradient.png);
+    background-position: center top;
+    background-size: contain;
 }
 
 main h1 {
